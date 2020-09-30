@@ -1,1 +1,1 @@
-# COMP 2406 PROJECT
+# Connect 4 (2406)
