@@ -1,0 +1,24 @@
+import React from 'react'
+import Navigation from './Navigation'
+import { Card, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+
+export default function Lobbies() {
+    return (
+        <div>
+            <Navigation />
+            <Button>
+                Create Game
+            </Button>
+            <Card className="mw-100">
+                <Card.Body>
+                    <Card.Title>Test</Card.Title>
+                    <Card.Text>
+                    test
+                    </Card.Text>
+                    <Button variant="primary">Join</Button>
+                </Card.Body>
+            </Card>
+        </div>
+    )
+}
