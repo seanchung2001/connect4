@@ -1,0 +1,25 @@
+import React from 'react'
+import Navigation from './Navigation'
+import { Card, ListGroup } from 'react-bootstrap'
+import { useAuth } from '../contexts/AuthContext'
+
+export default function Home(props) {
+    const { currentUser } = useAuth()
+    
+    return (
+        <div>
+            <Navigation />
+            <div className="mt-5">
+                <Card>
+                    <h2 className='text-center'>Welcome To Connect 4!</h2> 
+                </Card>
+                <ListGroup variant="flush">
+                    <ListGroup.Item>1. A coinflip will decide who will start first.</ListGroup.Item>
+                    <ListGroup.Item>2. Players will alternate turn after playing a checker.</ListGroup.Item>
+                    <ListGroup.Item>3. On your turn, drop one of your checkers down any of the slots in the top of the grid.</ListGroup.Item>
+                    <ListGroup.Item>4. Players alternates until one player gets 4 checkers of his color in a row.</ListGroup.Item>
+                </ListGroup>
+            </div>
+        </div>
+    )
+}
