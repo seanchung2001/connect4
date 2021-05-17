@@ -1,0 +1,17 @@
+const express = require('express');
+const router = express.Router();
+const User = require("../models/User");
+
+router.post('/', (req, res) => {
+    User.findOne({ username: req.body.username}, function(err, user) {
+        if (err) throw err;
+
+        if (user) {     //USER EXISTS
+            User.updateOne({username: user}, {$push: {friendRequests: user.username}});
+        } else {
+            res.sendStatus(404)
+        }
+    });
+});
+
+module.exports = router;
