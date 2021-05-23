@@ -1,6 +1,6 @@
 # **CONNECT 4**
 
-- Made-by: Sean Chung (seanchung2001), Adam Bishow (abish5)
+- Made-by: Sean Chung ([seanchung2001](http://www.github.com/seanchung2001)), Adam Bishow ([abish5](http://www.github.com/seanchung2001))
 
 # Languages And Extensions
 - JavaScript
